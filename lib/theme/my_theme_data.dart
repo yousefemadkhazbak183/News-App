@@ -21,7 +21,11 @@ class MyThemeData{
       titleLarge: TextStyle(
         fontSize: 22,
         color: AppColor.whiteColor,
-      )
-    )
+        ),
+        titleMedium: TextStyle(
+          fontSize: 20,
+          color: AppColor.geryColor,
+        ),
+        titleSmall: TextStyle(fontSize: 23, color: AppColor.blackColor)),
   );
 }
