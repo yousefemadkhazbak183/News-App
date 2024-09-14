@@ -12,12 +12,12 @@ class MyApp extends StatelessWidget {
       theme: MyThemeData.lightTheme,
       initialRoute: HomeScreen.routeHome,
       routes: {
-        HomeScreen.routeHome : (context)=> HomeScreen(),
+        HomeScreen.routeHome: (context) => HomeScreen(),
       },
     );
   }
-
 }
-void main(){
-  runApp( const MyApp());
+
+void main() {
+  runApp(const MyApp());
 }

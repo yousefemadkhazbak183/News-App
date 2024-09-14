@@ -7,7 +7,7 @@ import 'package:news_app/settings/settings_tab.dart';
 import 'package:news_app/theme/app_color.dart';
 
 class HomeScreen extends StatefulWidget {
-static const String routeHome = '/';
+  static const String routeHome = '/';
 
   @override
   State<HomeScreen> createState() => _HomeScreenState();
@@ -36,7 +36,8 @@ class _HomeScreenState extends State<HomeScreen> {
                   : selectedCategory == null
                       ? 'News App'
                       : selectedCategory!.title,
-              style: Theme.of(context).textTheme.titleLarge,),
+              style: Theme.of(context).textTheme.titleLarge,
+            ),
           ),
           drawer: Drawer(
             child: HomeDrower(
