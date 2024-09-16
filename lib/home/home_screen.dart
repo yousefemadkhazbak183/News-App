@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:news_app/home/category/category.dart';
-import 'package:news_app/home/category/category_details.dart';
 import 'package:news_app/home/category/category_fragment.dart';
+import 'package:news_app/home/category/cubit/category_details_mvvm_bloc.dart';
 import 'package:news_app/home/drower/home_drower.dart';
 import 'package:news_app/settings/settings_tab.dart';
 import 'package:news_app/theme/app_color.dart';
@@ -50,7 +50,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   ? CategoryFragment(
                       onCategoryItemClicked: onCategoryItemClicked,
                     )
-                  : CategoryDetails(
+                  : CategoryDetailsMvvmBloc(
                       category: selectedCategory!,
                     ),
         ),

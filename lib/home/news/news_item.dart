@@ -22,7 +22,7 @@ class NewsItem extends StatelessWidget {
               height: MediaQuery.of(context).size.height * 0.3,
               fit: BoxFit.fill,
               imageUrl: articles.urlToImage ?? "",
-              placeholder: (context, url) => Center(
+              placeholder: (context, url) => const Center(
                   child: CircularProgressIndicator(
                 color: AppColor.primaryColor,
               )),
@@ -39,7 +39,7 @@ class NewsItem extends StatelessWidget {
             articles.title ?? "",
             style: Theme.of(context).textTheme.titleSmall,
           ),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           Text(

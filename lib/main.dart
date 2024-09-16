@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:news_app/home/home_screen.dart';
+import 'package:news_app/my_bloc_observer.dart';
 import 'package:news_app/theme/my_theme_data.dart';
 
 class MyApp extends StatelessWidget {
@@ -19,5 +21,10 @@ class MyApp extends StatelessWidget {
 }
 
 void main() {
+  void main() {
+    Bloc.observer = MyBlocObserver();
+    // Use cubits...
+  }
+
   runApp(const MyApp());
 }
